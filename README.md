@@ -1,4 +1,7 @@
 # ImprovingGeneralisationWLSubtreeKernel
+
+DOI: 10.5281/zenodo.11081253
+
 Bachelor thesis on Improving the Generalisation Performance of the Weisfeiler-Lehman Subtree Kernel
 
 The results that were computed are kept in the excel file "results"
