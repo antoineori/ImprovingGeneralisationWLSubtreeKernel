@@ -7,7 +7,6 @@ from WL.wl_og import wl_og
 from WL.wl_mod3 import wl_mod3
 from WL.wl_mod4 import wl_mod4
 from WL.wl_mod2 import wl_mod2
-import time
 from kernel_evaluation import kernel_svm_evaluation
 import aux_functions
 import numpy as np
@@ -120,46 +119,7 @@ def run_all_mods():
 #for i in range(len(parameter.dataset_list)):
  #   run_all_mods()
   #  parameter.next_dataset_parameter()
+
+
 print(run_full_with_WL_with_progressbar(wl_mod_cycle))
 
-
-
-"""
-param1 = [0.9, 0.85, 0.8]
-param2 = [0.15, 0.2, 0.25]
-param3 = [0.15, 0.2, 0.25]
-param4 = [[1, 2]]
-if max_iterations >= 5:
-    param4 = [[1, 2], [1, 3], [2, 2], [2, 3]]
-elif max_iterations == 4:
-    param4 = [[1, 2], [1, 3], [2, 2], [2, 3]]
-
-for i in range(len(parameter.dataset_list)):
-    data = ["Dataset: " + parameter.dataset_name + " - Iterations: " + str(max_iterations)]
-    for param in param1:
-        newdata = run_full_with_WL_with_progressbar(wl_mod1, param)
-        data.append(newdata)
-
-    for param in param2:
-        newdata = run_full_with_WL_with_progressbar(wl_mod2, param)
-        data.append(newdata)
-
-    if max_iterations > 2:
-        for param in param3:
-            newdata = run_full_with_WL_with_progressbar(wl_mod3, param, None)
-            data.append(newdata)
-
-        for param in param4:
-            newdata = run_full_with_WL_with_progressbar(wl_mod4, param[0], param[1])
-            data.append(newdata)
-
-
-
-    data.append("----------------------------------------")
-    testingdatafile = "Result_Data/data_testing.txt"
-    with open(testingdatafile, mode="a") as text_file:
-        for line in data:
-            text_file.write(line + "\n")
-
-    parameter.next_dataset_parameter()
-"""

@@ -7,11 +7,13 @@ Bachelor thesis on Improving the Generalisation Performance of the Weisfeiler-Le
 The results that were computed are kept in the excel file "results"
 
 To run with your own dataset or parameters:
-- in main run: run_full_with_WL_with_progressbar(<wl algorithm you want to use>, <hyperparameters>)
-- in parameter in the class Parameter, change self.dataset_list to ["<name of dataset>"]
+- in main run: run_full_with_WL_with_progressbar(>wl algorithm you want to use<, >hyperparameters<)
+- in parameter change max_iterations to the interation hyperparameter you want 
+- in parameter in the class Parameter, change self.dataset_list to [">name of dataset<"]
 
 Be aware, the code is not memory optimized, you will need a lot RAM to run the very large datasets. (the small/medium ones should not be an issue)
----------------------------------------------------------------------------------------------------
+
+
 The datasets available in the project were made available by my tutor, Christopher Morris, from graphlearning.io :
 
 @inproceedings{Morris+2020,
